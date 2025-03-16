@@ -2,62 +2,62 @@
       <section class="bg-gray-50">
     <!-- Hero Main Content -->
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-      <!-- Main Hero Banner - Improved Mobile Responsiveness -->
-      <div class="relative overflow-hidden rounded-lg shadow-lg mb-8">
-        <div class="relative">
-          <!-- More responsive aspect ratio that works better on mobile -->
-          <div class="aspect-[16/9] sm:aspect-[21/9]">
-            <img 
-              v-show="currentSlide === 0"
-              src="https://i.dell.com/sites/csimages/App-Merchandizing_Images/all/dbcs-371801-notebook-inspiron-16-5630-14-7430-1920x1440.png"
-              alt="Special offers" 
-              class="w-full h-full object-cover transition-opacity duration-500"
-              :class="currentSlide === 0 ? 'opacity-100' : 'opacity-0 absolute inset-0'"
-            />
-            <img 
-              v-show="currentSlide === 1"
-              src="https://i.pinimg.com/736x/3b/e5/d2/3be5d2c91c64dc240bef81e339c40d8f.jpg"
-              alt="New arrivals" 
-              class="w-full h-full object-cover transition-opacity duration-500"
-              :class="currentSlide === 1 ? 'opacity-100' : 'opacity-0 absolute inset-0'"
-            />
-          </div>
-            
-          <!-- Banner Content - Repositioned for better mobile experience -->
-          <div class="absolute inset-0 flex items-center">
-            <!-- Gradient optimized to show more of the image on mobile -->
-            <div class="w-full h-full absolute bg-gradient-to-r from-black/60 via-black/40 to-transparent"></div>
-            <div class="relative w-full md:w-1/2 p-6 md:p-12">
-              <h1 class="text-3xl md:text-5xl font-bold text-white">
-                Next-Gen Tech <br /><span class="text-yellow-300">At Your Fingertips</span>
-              </h1>
-              <p class="mt-3 md:mt-4 text-base md:text-lg text-white max-w-xl">
-                Discover the latest electronic devices with cutting-edge technology and premium quality.
-              </p>
-              <div class="mt-4 md:mt-6 flex gap-3 md:gap-4">
-                <a href="/products" class="bg-blue-600 hover:bg-blue-700 text-white font-medium px-4 md:px-6 py-2 md:py-3 rounded-md transition-colors duration-300 text-sm md:text-base">
-                  Shop Now
-                </a>
-                <a href="/deals" class="bg-white hover:bg-gray-100 text-blue-600 font-medium px-4 md:px-6 py-2 md:py-3 rounded-md transition-colors duration-300 text-sm md:text-base">
-                  View Deals
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-          
-        <!-- Carousel Indicators -->
-        <div class="absolute bottom-4 left-0 right-0 flex justify-center space-x-2">
-          <button 
-            v-for="(_, index) in 2" 
-            :key="index"
-            @click="currentSlide = index"
-            class="w-2 h-2 md:w-3 md:h-3 rounded-full transition-colors duration-300"
-            :class="currentSlide === index ? 'bg-blue-600' : 'bg-white hover:bg-blue-200'"
-            aria-label="Go to slide"
-          ></button>
+
+      <div class="relative overflow-hidden rounded-lg shadow-lg mb-8 w-full">
+  <div class="relative">
+    <!-- Mobile-optimized aspect ratio with better width control -->
+    <div class="aspect-[4/5] sm:aspect-[16/9] md:aspect-[21/9] min-h-[300px] w-full">
+      <img 
+        v-show="currentSlide === 0"
+        src="https://i.dell.com/sites/csimages/App-Merchandizing_Images/all/dbcs-371801-notebook-inspiron-16-5630-14-7430-1920x1440.png"
+        alt="Special offers" 
+        class="w-full h-full object-cover object-center transition-opacity duration-500"
+        :class="currentSlide === 0 ? 'opacity-100' : 'opacity-0 absolute inset-0'"
+      />
+      <img 
+        v-show="currentSlide === 1"
+        src="https://i.pinimg.com/736x/3b/e5/d2/3be5d2c91c64dc240bef81e339c40d8f.jpg"
+        alt="New arrivals" 
+        class="w-full h-full object-cover object-center transition-opacity duration-500"
+        :class="currentSlide === 1 ? 'opacity-100' : 'opacity-0 absolute inset-0'"
+      />
+    </div>
+      
+    <!-- Banner Content - Better positioned for mobile -->
+    <div class="absolute inset-0 flex items-center">
+      <!-- Adjusted gradient for better image visibility -->
+      <div class="w-full h-full absolute bg-gradient-to-r from-black/70 via-black/40 to-transparent"></div>
+      <div class="relative w-full px-6 py-10 md:w-1/2 md:p-12">
+        <h1 class="text-3xl md:text-5xl font-bold text-white">
+          Next-Gen Tech <br /><span class="text-yellow-300">At Your Fingertips</span>
+        </h1>
+        <p class="mt-3 md:mt-4 text-base md:text-lg text-white max-w-xl">
+          Discover the latest electronic devices with cutting-edge technology and premium quality.
+        </p>
+        <div class="mt-4 md:mt-6 flex gap-3 md:gap-4">
+          <a href="/products" class="bg-blue-600 hover:bg-blue-700 text-white font-medium px-4 md:px-6 py-2 md:py-3 rounded-md transition-colors duration-300 text-sm md:text-base">
+            Shop Now
+          </a>
+          <a href="/deals" class="bg-white hover:bg-gray-100 text-blue-600 font-medium px-4 md:px-6 py-2 md:py-3 rounded-md transition-colors duration-300 text-sm md:text-base">
+            View Deals
+          </a>
         </div>
       </div>
+    </div>
+  </div>
+    
+  <!-- Enhanced Carousel Indicators -->
+  <div class="absolute bottom-6 left-0 right-0 flex justify-center space-x-3 z-10">
+    <button 
+      v-for="(_, index) in 2" 
+      :key="index"
+      @click="currentSlide = index"
+      class="w-3 h-3 sm:w-4 sm:h-4 rounded-full transition-colors duration-300 shadow-md"
+      :class="currentSlide === index ? 'bg-blue-600 scale-110' : 'bg-white hover:bg-blue-200'"
+      aria-label="Go to slide"
+    ></button>
+  </div>
+</div>
         
       <!-- Enhanced Featured Categories Grid with Images and Better Text -->
       <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6 mb-8">
