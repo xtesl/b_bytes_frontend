@@ -1,24 +1,24 @@
 <template>
       <section class="bg-gray-50">
     <!-- Hero Main Content -->
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 py-8">
 
-      <div class="relative overflow-hidden rounded-lg shadow-lg mb-8 w-full">
+      <div class="relative overflow-hidden rounded-lg mb-8 w-full">
   <div class="relative">
     <!-- Mobile-optimized aspect ratio with better width control -->
-    <div class="aspect-[4/5] sm:aspect-[16/9] md:aspect-[21/9] min-h-[300px] w-full">
+    <div class="aspect-[5/6] sm:aspect-[16/10] md:aspect-[21/10] min-h-[300px] w-full">
       <img 
         v-show="currentSlide === 0"
         src="https://i.dell.com/sites/csimages/App-Merchandizing_Images/all/dbcs-371801-notebook-inspiron-16-5630-14-7430-1920x1440.png"
         alt="Special offers" 
-        class="w-full h-full object-cover object-center transition-opacity duration-500"
+        class="w-full h-full object-fit  transition-opacity duration-500"
         :class="currentSlide === 0 ? 'opacity-100' : 'opacity-0 absolute inset-0'"
       />
       <img 
         v-show="currentSlide === 1"
         src="https://i.pinimg.com/736x/3b/e5/d2/3be5d2c91c64dc240bef81e339c40d8f.jpg"
         alt="New arrivals" 
-        class="w-full h-full object-cover object-center transition-opacity duration-500"
+        class="w-full h-full object-fit  transition-opacity duration-500"
         :class="currentSlide === 1 ? 'opacity-100' : 'opacity-0 absolute inset-0'"
       />
     </div>
