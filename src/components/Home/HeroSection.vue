@@ -3,6 +3,78 @@
     <!-- Hero Main Content -->
     <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 py-8">
 
+        
+
+            <!-- Popular Brands Section -->
+<div class="py-4 sm:py-6 bg-white border-b border-gray-200">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <!-- Section Header -->
+    <div class="text-center mb-4">
+      <h2 class="text-sm font-medium text-gray-500 tracking-wider uppercase">Popular Brands</h2>
+    </div>
+    
+    <!-- Brands Slider/Carousel -->
+    <div class="relative">
+      <!-- Overflow container for mobile scrolling -->
+      <div class="flex items-center justify-between space-x-8 overflow-x-auto scrollbar-hide py-2 px-1">
+        <!-- Samsung -->
+        <div class="flex-shrink-0 flex flex-col items-center group">
+          <div class="w-20 h-20 sm:w-24 sm:h-24 rounded-full flex items-center justify-center 
+            group-hover:border-blue-200 group-hover:shadow-md transition-all duration-300">
+            <img src="https://brandlogos.net/wp-content/uploads/2014/08/samsung-logo-preview.png"
+            alt="Samsung" class="w-full h-full object-contain" />
+          </div>
+          <span class="mt-2 text-xs sm:text-sm font-medium text-gray-700">Samsung</span>
+        </div>
+        
+        <!-- Dell -->
+        <div class="flex-shrink-0 flex flex-col items-center group">
+          <div class="w-20 h-20 sm:w-24 sm:h-24  rounded-full flex items-center justify-center 
+         group-hover:border-blue-200 group-hover:shadow-md transition-all duration-300">
+            <img src="https://1000logos.net/wp-content/uploads/2017/07/Dell-Logo.png" 
+            alt="Dell" class="w-full h-full object-contain" />
+          </div>
+          <span class="mt-2 text-xs sm:text-sm font-medium text-gray-700">Dell</span>
+        </div>
+        
+        <!-- Lenovo -->
+        <div class="flex-shrink-0 flex flex-col items-center group">
+          <div class="w-20 h-20 sm:w-24 sm:h-24 rounded-full flex items-center justify-center 
+         group-hover:border-blue-200 group-hover:shadow-md transition-all duration-300">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFcjDhQUWT_y3l2N1zHxpR82SsZdYDeCcPgQ&s" alt="Lenovo" class="w-full h-full object-contain" />
+          </div>
+          <span class="mt-2 text-xs sm:text-sm font-medium text-gray-700">Lenovo</span>
+        </div>
+        
+        <!-- Apple -->
+        <div class="flex-shrink-0 flex flex-col items-center group">
+          <div class="w-20 h-20 sm:w-24 sm:h-24 rounded-full flex items-center 
+           border-gray-200 group-hover:border-blue-200 group-hover:shadow-md transition-all duration-300">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQv8q-q8tIe9uneV2Q5zoHeztF9m41_uSYjzA&s" 
+            alt="Apple" class="w-full h-full object-contain" />
+          </div>
+          <span class="mt-2 text-xs sm:text-sm font-medium text-gray-700">Apple</span>
+        </div>
+        
+        <!-- HP -->
+        <div class="flex-shrink-0 flex flex-col items-center group">
+          <div class="w-20 h-20 sm:w-24 sm:h-24 bg-gray-50 rounded-full flex items-center justify-center  
+          group-hover:border-blue-200 group-hover:shadow-md transition-all duration-300">
+            <img src="https://logos-world.net/wp-content/uploads/2020/11/Hewlett-Packard-Logo-2008-2014.png" 
+            alt="HP" class="w-full h-full object-contain" />
+          </div>
+          <span class="mt-2 text-xs sm:text-sm font-medium text-gray-700">HP</span>
+        </div>
+      </div>
+      
+      <!-- Optional Gradient Overlays for Scroll Indication -->
+      <div class="absolute left-0 top-0 bottom-0 w-8 bg-gradient-to-r from-white to-transparent pointer-events-none hidden sm:block"></div>
+      <div class="absolute right-0 top-0 bottom-0 w-8 bg-gradient-to-l from-white to-transparent pointer-events-none hidden sm:block"></div>
+    </div>
+  </div>
+</div>
+
+
       <div class="relative overflow-hidden rounded-lg mb-8 w-full">
   <div class="relative">
     <!-- Mobile-optimized aspect ratio with better width control -->

@@ -4,7 +4,7 @@
         <div class="flex items-center justify-between h-16">
           <!-- Logo -->
           <div class="flex-shrink-0">
-            <a href="/" class="text-xl font-bold text-teal-500">TechGadgets</a>
+            <a href="/" class="text-xl font-bold text-teal-500">Buy Bytes</a>
           </div>
   
           <!-- Mobile menu button -->
