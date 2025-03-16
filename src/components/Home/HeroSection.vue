@@ -107,10 +107,10 @@
           Discover the latest electronic devices with cutting-edge technology and premium quality.
         </p>
         <div class="mt-4 md:mt-6 flex gap-3 md:gap-4">
-          <a href="/products" class="bg-blue-600 hover:bg-blue-700 text-white font-medium px-4 md:px-6 py-2 md:py-3 rounded-md transition-colors duration-300 text-sm md:text-base">
+          <a href="/products" class="bg-teal-600 hover:bg-blue-700 text-white font-medium px-4 md:px-6 py-2 md:py-3 rounded-md transition-colors duration-300 text-sm md:text-base">
             Shop Now
           </a>
-          <a href="/deals" class="bg-white hover:bg-gray-100 text-blue-600 font-medium px-4 md:px-6 py-2 md:py-3 rounded-md transition-colors duration-300 text-sm md:text-base">
+          <a href="/deals" class="bg-white hover:bg-gray-100 text-teal-600 font-medium px-4 md:px-6 py-2 md:py-3 rounded-md transition-colors duration-300 text-sm md:text-base">
             View Deals
           </a>
         </div>
@@ -125,13 +125,23 @@
       :key="index"
       @click="currentSlide = index"
       class="w-3 h-3 sm:w-4 sm:h-4 rounded-full transition-colors duration-300 shadow-md"
-      :class="currentSlide === index ? 'bg-blue-600 scale-110' : 'bg-white hover:bg-blue-200'"
+      :class="currentSlide === index ? 'bg-teal-600 scale-110' : 'bg-white hover:bg-blue-200'"
       aria-label="Go to slide"
     ></button>
   </div>
 </div>
         
       <!-- Enhanced Featured Categories Grid with Images and Better Text -->
+      <!-- <h2 class="text-2xl font-bold text-gray-800">Categories</h2> -->
+      <div class="flex justify-between items-center mb-6">
+            <h2 class="text-2xl font-bold text-gray-800">Categories</h2>
+            <a href="/products" class="text-teal-600 hover:text-teal-700 font-medium flex items-center">
+              Explore Categories
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+              </svg>
+            </a>
+          </div>
       <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6 mb-8">
         <!-- Category 1 - Enhanced with Image -->
         <div class="group relative overflow-hidden rounded-lg bg-white shadow hover:shadow-lg transition-all duration-300">
@@ -163,7 +173,7 @@
               <h3 class="text-lg md:text-xl font-medium text-gray-800">Smartphones</h3>
               <p class="mt-2 text-gray-600 text-sm md:text-base">The latest smartphones with cutting-edge features and exceptional camera quality.</p>
               <div class="mt-3">
-                <span class="inline-flex items-center text-blue-600 font-medium text-sm md:text-base hover:text-blue-700">
+                <span class="inline-flex items-center text-teal-600 font-medium text-sm md:text-base hover:text-blue-700">
                   Browse Smartphones
                   <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" viewBox="0 0 20 20" fill="currentColor">
                     <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
@@ -176,7 +186,7 @@
         </div>
           
         <!-- Category 2 - Enhanced with Image -->
-        <div class="group relative overflow-hidden rounded-lg bg-white shadow hover:shadow-lg transition-all duration-300">
+        <div class="group relative overflow-hidden rounded-lg bg-white shadow hover:shadow-md transition-all duration-300">
           <div class="flex flex-col md:flex-row">
             <!-- Category Image -->
             <div class="relative w-full md:w-1/3 h-w md:h-auto overflow-hidden">
@@ -205,7 +215,7 @@
               <h3 class="text-lg md:text-xl font-medium text-gray-800">Laptops</h3>
               <p class="mt-2 text-gray-600 text-sm md:text-base">Powerful laptops for work, gaming, and everything in between with exceptional performance.</p>
               <div class="mt-3">
-                <span class="inline-flex items-center text-purple-600 font-medium text-sm md:text-base hover:text-purple-700">
+                <span class="inline-flex items-center text-teal-600 font-medium text-sm md:text-base hover:text-purple-700">
                   Browse Laptops
                   <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" viewBox="0 0 20 20" fill="currentColor">
                     <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
@@ -222,7 +232,7 @@
         <div class="mb-8">
           <div class="flex justify-between items-center mb-6">
             <h2 class="text-2xl font-bold text-gray-800">Featured Products</h2>
-            <a href="/products" class="text-blue-600 hover:text-blue-700 font-medium flex items-center">
+            <a href="/products" class="text-teal-600 hover:text-teal-700 font-medium flex items-center">
               View All
               <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1" viewBox="0 0 20 20" fill="currentColor">
                 <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
@@ -251,10 +261,10 @@
                 <p class="text-sm text-gray-500 mb-2">Premium sound quality</p>
                 <div class="flex justify-between items-center">
                   <div>
-                    <span class="text-blue-600 font-bold">$99.99</span>
+                    <span class="text-teal-600 font-bold">$99.99</span>
                     <span class="text-gray-400 text-sm line-through ml-2">$129.99</span>
                   </div>
-                  <button class="bg-blue-600 text-white p-1.5 rounded-md hover:bg-blue-700" @click="addToCart(0)">
+                  <button class="bg-teal-600 text-white p-1.5 rounded-md hover:bg-blue-700" @click="addToCart(0)">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
                       <path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z" />
                     </svg>
@@ -282,8 +292,8 @@
                 <h3 class="font-medium text-gray-800 mb-1">Smart Watch</h3>
                 <p class="text-sm text-gray-500 mb-2">Health & fitness tracking</p>
                 <div class="flex justify-between items-center">
-                  <span class="text-blue-600 font-bold">$149.99</span>
-                  <button class="bg-blue-600 text-white p-1.5 rounded-md hover:bg-blue-700" @click="addToCart(1)">
+                  <span class="text-teal-600 font-bold">$149.99</span>
+                  <button class="bg-teal-600 text-white p-1.5 rounded-md hover:bg-blue-700" @click="addToCart(1)">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
                       <path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z" />
                     </svg>
